@@ -1,10 +1,9 @@
 /*
-Name: Mike Villeneuve
-Date: 9/4/2021
+    Name: Mike Villeneuve
+    Date: 6/23/2022
 */
 
-function validateField() 
-{
+function validateField() {
     "use strict";
 
     let textField = document.querySelector("#textField");
@@ -12,14 +11,12 @@ function validateField()
     let preliminaryOutput = "The entered username is ";
     let invalidOutput = "Username is a required field!";
 
-    if(userEnteredValue.length > 0) 
-    {
+    if (userEnteredValue.length > 0) {
         console.log(`${preliminaryOutput}` + `${userEnteredValue}`);
         textField.style.borderColor = "green";
         document.getElementById("output").innerHTML = (`<br \>` + `${preliminaryOutput}` + `${userEnteredValue}`);
     } 
-    else 
-    {
+    else {
         console.log("Username is a required field!")
         textField.style.borderColor = "red";
         document.getElementById("output").innerHTML = (`<br \>` + `${invalidOutput}`);
